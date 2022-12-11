@@ -26,16 +26,18 @@ const form = document.getElementById('form');
 const inputs = document.querySelectorAll('#form input');
 
 const expresions = {
-	name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-	passwd: /^.{4,12}$/, // 4 a 12 digitos.
-	mail: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
+	name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
+	mail: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+	tel: /^\(?([0-9]{2})\)?[-. ]?([0-9]{2})[-. ]?([0-9]{2})[-. ]?([0-9]{2})[-. ]?([0-9]{2})$/,
+	msgtxt: /^[A-za-z0–9_]{1,300}$/
 }
 
 const fields = {
 	surname: false,
 	name: false,
 	email: false,
-	passwd: false
+	tel: false,
+	msgtxt: false
 }
 
 const validateForm = (e) => {
@@ -49,8 +51,11 @@ const validateForm = (e) => {
 		case "email":
 			validateField(expresions.mail, e.target, 'email')
 		break;
-		case "passwd":
-			validateField(expresions.passwd, e.target, 'passwd')
+		case "tel":
+			validateField(expresions.tel, e.target, 'tel')
+		break;
+		case "msgtxt":
+			validateField(expresions.msgtxt, e.target, 'msgtxt')
 		break;
 	}
 }
@@ -95,5 +100,20 @@ function toggle(){
 	blur.classList.toggle('active');
 	var popup = document.getElementById('popup');
 	popup.classList.toggle('active');
-	
+	document.addEventListener('keydown', function(event) {
+		const key = event.key; // const {key} = event; in ES6+
+		if (key === "Escape") {
+			blur.classList.toggle('active');
+			popup.classList.toggle('active');
+		}
+	});
+}
+
+// SCROLL BAR
+
+let progress = document.getElementById('progressbar');
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function(){
+	let progressHeight = (window.pageYOffset / totalHeight) * 100;
+	progress.style.height = progressHeight + "%";
 }

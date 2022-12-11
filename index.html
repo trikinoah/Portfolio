@@ -8,11 +8,14 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+	<!-- Scroll Bar -->
+	<div id="progressbar"></div>
+	<div id="scrollPath"></div>
 	<!-- Menu Entête -->
 		<div class="content-header">
 			<header>
 				<div class="logo">
-					<a href="#"><span class="couleur-bleu">TRIKI</span> Noah</a>
+					<a href="https://www.linkedin.com/in/noah-triki/" target="_blank"><span class="couleur-bleu">TRIKI</span> Noah</a>
 				</div>
 				<nav id="nav">
 					<ul>
@@ -20,6 +23,7 @@
 						<li><a href="#apropos">À propos</a></li>
 						<li><a href="#cv">CV</a></li>
 						<li><a href="#skills">Compétences</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
 						<li><a href="#contact" onclick="toggle()">Contact</a></li>
 					</ul>
 				</nav>
@@ -392,8 +396,34 @@
 				</div>
 			</section>
 
-
+		<!-- Portfolio -->
+			<div class="background">
+				<section id="portfolio" class="portfolio">
+					<div class="content-section">
+						<h2>Portfolio</h2>
+						<div class="rows">
+							<div class="card">
+								<div class="image-proj">
+									<img src="img/clubmed.png">
+								</div>
+								<div class="infos">
+									<a href="http://51.83.36.122/5962" target="_blank"><h3>ClubMed site</h3></a>
+									<p>Projet universitaire dans lequel j'étais chargé de créer et de gérer la base de données, analyser les besoins clients et gérer les politiques RGPD de clubMed(Entreprise de voyages) avec 4 collègues.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		<!-- Footer -->
+		<footer>
+			<div class="content-section">
+				<h2> &copy Noah Triki 2022</h2>
+			</div>
+		</footer>
 		</div>
+
+
 		<!-- Contact -->
 		<div class="popup" id="popup">
 			<div id="contact" class="contact">
@@ -402,7 +432,7 @@
 				<h2>Envoyez moi un <span>message</span> !</h2>
 					<!-- GROUPE NOM-->
 					<div class="form-group" id="group-surname">
-						<label for="surname" class="form-label">Nom</label>
+						<label for="surname" class="form-label">Nom *</label>
 						<div class="form-group-input">
 							<input type="text" class="form-input" name="surname" id="surname">
 							<i class="form-validate-state fa fa-times-circle"></i>
@@ -412,7 +442,7 @@
 
 					<!-- GROUPE PRENOM -->
 					<div class="form-group" id="group-name">
-						<label for="name" class="form-label">Prénom</label>
+						<label for="name" class="form-label">Prénom *</label>
 						<div class="form-group-input">
 							<input type="text" class="form-input" name="name" id="name">
 							<i class="form-validate-state fa fa-times-circle"></i>
@@ -432,17 +462,17 @@
 
 					<!-- GROUPE TELEPHONE -->
 					<div class="form-group" id="group-tel">
-						<label for="tel" class="form-label">Téléphone</label>
+						<label for="tel" class="form-label">Téléphone *</label>
 						<div class="form-group-input">
 							<input type="tel" class="form-input" name="tel" id="tel">
 							<i class="form-validate-state fa fa-times-circle"></i>
 						</div>
-						<p class="form-input-error">Le prénom ne peut que contenir des espaces et des lettres.</p>
+						<p class="form-input-error">Le numéro ne peut que contenir 10 chiffres, merci de mettre le 0 au début</p>
 					</div>
 
 					<!-- GROUPE EMAIL -->
 					<div class="form-group form-group-email" id="group-email">
-						<label for="email" class="form-label">Email</label>
+						<label for="email" class="form-label">Email *</label>
 						<div class="form-group-input">
 							<input type="email" class="form-input" name="email" id="email">
 							<i class="form-validate-state fa fa-times-circle"></i>
@@ -450,15 +480,17 @@
 						<p class="form-input-error">l'email ne peut contenir que des lettres, des chiffres, des points, des tirets et des tirets du bas.</p>
 					</div>
 
-					<!-- GROUPE MDP	-->
-					<div class="form-group form-group-passwd" id="group-passwd">
-						<label for="passwd" class="form-label">Mot de Passe</label>
+					<!-- GROUPE TEXT -->
+					<div class="form-group form-group-msgtxt" id="group-msgtxt">
+						<label for="msgtxt" class="form-label">Message</label>
 						<div class="form-group-input">
-							<input type="password" class="form-input" name="passwd" id="passwd">
+							<textarea class="form-input comments" name="msgtxt" id="msgtxt"></textarea>
 							<i class="form-validate-state fa fa-times-circle"></i>
 						</div>
-						<p class="form-input-error">Le mot de passe doit être compris entre 4 et 12 caractères.</p>
+						<p class="form-input-error">Le message ne peut que faire 300 caractères</p>
 					</div>
+
+					
 
 					<!-- MESSAGE ERROR -->
 					<div class="form-message" id="form-message">
