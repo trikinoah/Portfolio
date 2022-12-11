@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Portfolio - Noah TRIKI</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!-- Menu Entête -->
+		<div class="content-header">
+			<header>
+				<div class="logo">
+					<a href="#"><span class="couleur-bleu">TRIKI</span> Noah</a>
+				</div>
+				<nav id="nav">
+					<ul>
+						<li><a href="#accueil">Accueil</a></li>
+						<li><a href="#apropos">À propos</a></li>
+						<li><a href="#cv">CV</a></li>
+						<li><a href="#skills">Compétences</a></li>
+						<li><a href="#contact" onclick="toggle()">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="nav-responsive">
+					<i class="fa-solid fa-bars"></i>
+				</div>
+			</header>
+		</div>
+
+
+
+		<div class="general-content" id="blur">
+
+		<!-- Accueil -->
+			<div id="accueil" class="accueil">
+				<section>
+					<div class="content-img">
+						<img src="img/photoNoah.png">
+					</div>
+					<div class="content-banner">
+						<h1><span>TRIKI</span> Noah</h1>
+						<h2>Business Analyste</h2>
+						<p>Étudiant en France, je prépare actuellement mon BUT en informatique à Annecy. Passionné par la finance, les bases de données et le rugby, je suis curieux mais aussi sérieux et j'ai toujours à cœur de bien faire ce que j'entreprends. </p>
+						<form action="submit">
+							<div class="email-box">
+								<button type="button" id="email-icon"><i class="fa-solid fa-envelope"></i></button>
+								<input type="email" id="email-input" placeholder="Recevoir CV par email">
+								<button type="submit" id="button-email"><i class="fa-solid fa-arrow-right"></i></button>
+							</div>
+						</form>
+					</div>
+				</section>
+			</div>
+		<!-- A propos -->
+
+			<section id="apropos" class="apropos">
+				<div class="content-section">
+					<h2>À propos</h2>
+					<div class="rows">
+						<!-- Informations Perso -->
+						<div class="infos">
+							<h3>Informations</h3>
+							<ul>
+								<li>
+									<strong>Statut</strong>
+									Célibataire
+								</li>
+								<li>
+									<strong>Naissance</strong>
+									11/08/2003 (19 ans)
+								</li>
+								<li>
+									<strong>Nationalité</strong>
+									Française
+								</li>
+								<li>
+									<strong>Adresse</strong>
+									12 Chemin de Bellevue,
+									74000 Annecy
+								</li>
+								<li>
+									<strong>Permis</strong>
+									B
+								</li>
+							</ul>
+							<h3>Contact</h3>
+							<ul>
+								<li>
+									<strong>Email</strong>
+									noah.triki@etu.univ-savoie.fr
+								</li>
+								<li>
+									<strong>Téléphone</strong>
+									07 66 05 02 96
+								</li>
+							</ul>
+						</div>
+						<!-- Interêts -->
+						<div class="infos">
+							<h3>Interêts</h3>
+							<div class="content-interests">
+								<div class="interests">
+									<i id="interests-before-hover" class="fa-regular fa-futbol"></i>
+									<span id="interests-before-hover">Sports</span>
+									<p id="interests-after-hover">
+											Passionné de sport, plus particulièrement de rugby, que je pratique depuis plus de 10 ans.
+									</p>
+									
+								</div>
+								<div class="interests">
+									<i id="interests-before-hover" class="fa-solid fa-headphones"></i>
+									<span id="interests-before-hover">Musique</span>
+									<p id="interests-after-hover">
+											La musique est la base de ma vie, sans elle, tout serait différent.
+									</p>
+								</div>
+								<div class="interests">
+									<i id="interests-before-hover" class="fa-solid fa-plane"></i>
+									<span id="interests-before-hover">Voyager</span>
+									<p id="interests-after-hover">
+											Voyager devient une source d'inspiration et de détente qui me permet aussi de récupérer mon énergie.
+									</p>
+								</div>
+								<div class="interests">
+									<i id="interests-before-hover" class="fas fa-dog"></i>
+									<span id="interests-before-hover">Animaux</span>
+									<p id="interests-after-hover">
+											J'ai été élevé dans un environnement avec des animaux, ce qui m'a permis de les respecter et de les aimer.
+									</p>
+								</div>
+								<div class="interests">
+									<i id="interests-before-hover" class="fas fa-dice-six"></i>
+									<span id="interests-before-hover">Jeux</span>
+									<p id="interests-after-hover">
+											Les jeux me permettent de socialiser avec mes amis et de développer mon cerveau, mes préférés sont les jeux de réflexion (échecs).
+									</p>
+								</div>
+								<div class="interests">
+									<i id="interests-before-hover" class="fas fa-hamburger"></i>
+									<span id="interests-before-hover">Cuisine</span>
+									<p id="interests-after-hover">
+											J'aime la cuisine parce qu'elle me permet de développer toute ma créativité et en raison de la grande variété de combinaisons que l'on peut faire avec les aliments.
+									</p>
+								</div>
+								<div class="interests">
+									<i id="interests-before-hover" class="fa-solid fa-money-bill"></i>
+									<span id="interests-before-hover">Finance</span>
+									<p id="interests-after-hover">
+											Le monde des affaires et de la finance a toujours été ma passion, c'est pourquoi j'y consacre une partie de mon temps libre.
+									</p>
+								</div>
+								<div class="interests">
+									<i id="interests-before-hover" class="fa-solid fa-database"></i>
+									<span id="interests-before-hover">BDD</span>
+									<p id="interests-after-hover">
+											Le monde des bases de données est si vaste que je découvre toujours de nouvelles choses, j'aimerais beaucoup m'y consacrer à l'avenir.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- CV -->
+			<div class="background">
+				<section id="cv" class="cv">
+					<div class="content-section">
+						<h2>CV</h2>
+						<div class="rows">
+							<div class="col left">
+								<h3>Formations</h3>
+								<div class="item l">
+									<h4>Baccalauréat (Sciences)</h4>
+									<span class="centre">IES José Saramago(Madrid,Espagne)</span>
+									<span class="dates">2019 - 2021</span>
+									<p>2 ans d'études pour obtenir mon diplôme avec une moyenne de 7,53/10.</p>
+									<div class="connectorl">
+										<div class="cerclel"></div>
+									</div>
+								</div>
+								<div class="item l">
+									<h4>BUT INFO (Parcours D)</h4>
+									<span class="centre">IUT Annecy(74)</span>
+									<span class="dates">2021 - 2024</span>
+									<p>3 ans d'études effectués dans le parcours D (management de Projet) où j'ai aquis toutes mes connaisances à propos de l'informatique.</p>
+									<div class="connectorl">
+										<div class="cerclel"></div>
+									</div>
+								</div>		
+							</div>
+							<div class="col right">
+								<h3>Expériences Professionnelles</h3>
+								<div class="item r">
+									<h4>Aide informatique personnes âgées</h4>
+									<span class="centre">Mairie de Majadahonda(Madrid, Espagne)</span>
+									<span class="dates">2020</span>
+									<p>Projet d'une durée de 3 mois visant à aider les personnes âgées et les débutants tous les jeudis à se familiariser avec l'informatique.</p>
+									<div class="connectorr">
+										<div class="cercler"></div>
+									</div>
+								</div>
+								<div class="item r">
+									<h4>Joueur de rugby</h4>
+									<span class="centre">US Annecy Rugby (espoirs)</span>
+									<span class="dates">2022/-</span>
+									<p>Après avoir joué 8 ans en Espagne, cela m'a donné assez d'expérience pour rejoindre l'équipe U23 en tant que numéro 10 de l'US Annecy, qui joue actuellement en fédérale 1.</p>
+									<div class="connectorr">
+										<div class="cercler"></div>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		<!-- Skills -->
+			<section id="skills" class="skills">
+				<div class="content-section">
+					<h2>Compétences</h2>
+					<div class="tabs">
+						<div class="tabs-head">
+							<span class="tabs-toggle is-active">BDD</span>
+							<span class="tabs-toggle">ERP</span>
+							<span class="tabs-toggle">Développement</span>
+							<span class="tabs-toggle">Langues</span>
+							<span class="tabs-toggle">Autres</span>
+						</div>
+						<div class="tabs-body">
+							<div class="tabs-content is-active">
+								<div class="content-skill">
+									<div class="circle-anim"></div>
+									<h3>PostgreSQL</h3>
+									<div class="content">
+										<h4>Niveau</h4>
+										<p>Intermediaire</p>
+									</div>
+								</div>
+								<div class="content-skill">
+									<div class="circle-anim"></div>
+									<h3>pgAdmin4</h3>
+									<div class="content">
+										<h4>Niveau</h4>
+										<p>Intermediaire</p>
+									</div>
+								</div>
+								<div class="content-skill">
+									<div class="circle-anim"></div>
+									<h3>mySQL</h3>
+									<div class="content">
+										<h4>Niveau</h4>
+										<p>Intermediaire</p>
+									</div>
+								</div>
+								<div class="content-skill">
+									<div class="circle-anim"></div>
+									<h3>PowerAMC</h3>
+									<div class="content">
+										<h4>Niveau</h4>
+										<p>Intermediaire</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="tabs-content">
+								<div class="content-skill">
+									<div class="circle-anim"></div>
+									<h3>Odoo</h3>
+									<div class="content">
+										<h4>Niveau</h4>
+										<p>Avancé</p>
+									</div>
+								</div>
+								<div class="content-skill">
+									<div class="circle-anim"></div>
+									<h3>PowerBI</h3>
+									<div class="content">
+										<h4>Niveau</h4>
+										<p>Avancé</p>
+									</div>
+								</div>
+								<div class="content-skill">
+									<div class="circle-anim"></div>
+									<h3>MicrosoftProject</h3>
+									<div class="content">
+										<h4>Niveau</h4>
+										<p>Intermediaire</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="tabs-content">
+								<div class="content-skill">
+									<div class="circle-anim"></div>
+									<h3>HTML</h3>
+									<div class="content">
+										<h4>Niveau</h4>
+										<p>Avancé</p>
+									</div>
+								</div>
+								<div class="content-skill">
+									<div class="circle-anim"></div>
+									<h3>CSS</h3>
+									<div class="content">
+										<h4>Niveau</h4>
+										<p>Avancé</p>
+									</div>
+								</div>
+								<div class="content-skill">
+									<div class="circle-anim"></div>
+									<h3>JS</h3>
+									<div class="content">
+										<h4>Niveau</h4>
+										<p>Intermediaire</p>
+									</div>
+								</div>
+								<div class="content-skill">
+									<div class="circle-anim"></div>
+									<h3>PHP</h3>
+									<div class="content">
+										<h4>Niveau</h4>
+										<p>Intermediaire</p>
+									</div>
+								</div>
+								<div class="content-skill">
+									<div class="circle-anim"></div>
+									<h3>Python</h3>
+									<div class="content">
+										<h4>Niveau</h4>
+										<p>Basique</p>
+									</div>
+								</div>
+								<div class="content-skill">
+									<div class="circle-anim"></div>
+									<h3>C#</h3>
+									<div class="content">
+										<h4>Niveau</h4>
+										<p>Intermediaire</p>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-content">
+								<div class="content-skill">
+									<div class="circle-anim"></div>
+									<h3>Français</h3>
+									<div class="content">
+										<h4>Niveau</h4>
+										<p>Langue maternelle</p>
+									</div>
+								</div>
+								<div class="content-skill">
+									<div class="circle-anim"></div>
+									<h3>Espagnol</h3>
+									<div class="content">
+										<h4>Niveau</h4>
+										<p>Bilingue</p>
+									</div>
+								</div>
+								<div class="content-skill">
+									<div class="circle-anim"></div>
+									<h3>Anglais</h3>
+									<div class="content">
+										<h4>Niveau</h4>
+										<p href="https://www.service-public.fr/particuliers/vosdroits/F34739">Avancé - B2</p>
+										
+									</div>
+								</div>
+							</div>
+							<div class="tabs-content">
+								<div class="content-skill">
+									<div class="circle-anim"></div>
+									<h3>Excel</h3>
+									<div class="content">
+										<h4>Niveau</h4>
+										<p>Intermediaire</p>
+									</div>
+								</div>
+								<div class="content-skill">
+									<div class="circle-anim"></div>
+									<h3>Trello</h3>
+									<div class="content">
+										<h4>Niveau</h4>
+										<p>Intermediaire</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+
+
+		</div>
+		<!-- Contact -->
+		<div class="popup" id="popup">
+			<div id="contact" class="contact">
+				<form method="post" class="form" id="form">
+				<a onclick="toggle()"><i class="fa-solid fa-xmark"></i></a>
+				<h2>Envoyez moi un <span>message</span> !</h2>
+					<!-- GROUPE NOM-->
+					<div class="form-group" id="group-surname">
+						<label for="surname" class="form-label">Nom</label>
+						<div class="form-group-input">
+							<input type="text" class="form-input" name="surname" id="surname">
+							<i class="form-validate-state fa fa-times-circle"></i>
+						</div>
+						<p class="form-input-error">Le nom ne peut que contenir des espaces et des lettres.</p>
+					</div>
+
+					<!-- GROUPE PRENOM -->
+					<div class="form-group" id="group-name">
+						<label for="name" class="form-label">Prénom</label>
+						<div class="form-group-input">
+							<input type="text" class="form-input" name="name" id="name">
+							<i class="form-validate-state fa fa-times-circle"></i>
+						</div>
+						<p class="form-input-error">Le prénom ne peut que contenir des espaces et des lettres.</p>
+					</div>
+
+					<!-- GROUPE ENTREPRISE  -->
+					<div class="form-group" id="group-company">
+						<label for="company" class="form-label">Entreprise</label>
+						<div class="form-group-input">
+							<input type="text" class="form-input" name="company" id="company">
+							<i class="form-validate-state fa fa-times-circle"></i>
+						</div>
+						<p class="form-input-error">Le prénom ne peut que contenir des espaces et des lettres.</p>
+					</div>
+
+					<!-- GROUPE TELEPHONE -->
+					<div class="form-group" id="group-tel">
+						<label for="tel" class="form-label">Téléphone</label>
+						<div class="form-group-input">
+							<input type="tel" class="form-input" name="tel" id="tel">
+							<i class="form-validate-state fa fa-times-circle"></i>
+						</div>
+						<p class="form-input-error">Le prénom ne peut que contenir des espaces et des lettres.</p>
+					</div>
+
+					<!-- GROUPE EMAIL -->
+					<div class="form-group form-group-email" id="group-email">
+						<label for="email" class="form-label">Email</label>
+						<div class="form-group-input">
+							<input type="email" class="form-input" name="email" id="email">
+							<i class="form-validate-state fa fa-times-circle"></i>
+						</div>
+						<p class="form-input-error">l'email ne peut contenir que des lettres, des chiffres, des points, des tirets et des tirets du bas.</p>
+					</div>
+
+					<!-- GROUPE MDP	-->
+					<div class="form-group form-group-passwd" id="group-passwd">
+						<label for="passwd" class="form-label">Mot de Passe</label>
+						<div class="form-group-input">
+							<input type="password" class="form-input" name="passwd" id="passwd">
+							<i class="form-validate-state fa fa-times-circle"></i>
+						</div>
+						<p class="form-input-error">Le mot de passe doit être compris entre 4 et 12 caractères.</p>
+					</div>
+
+					<!-- MESSAGE ERROR -->
+					<div class="form-message" id="form-message">
+						<p><i class="fa fa-exclamation-circle"></i><b>Error :</b> Completez correctement le formulaire s'il vous plaît.</p>
+					</div>
+
+					<!-- GROUPE ENVOYER -->
+					<div class="form-group form-group-send-btn">
+						<button type="submit" class="form-btn">Créer</button>
+					</div>
+
+
+				</form>
+			</div>
+		</div>
+		
+
+
+
+		<script defer src="js/script.js"></script>
+</body>
+</html>
