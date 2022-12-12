@@ -419,7 +419,106 @@ html{
 	position: relative;
 	bottom: 4px;
 }
+/* Parcours */
+.parcours{
+	background-color: #171717;
+	color: #D4D4D4;
+	padding: 50px 20px;
+	height: 100vh;
+	border-radius: 0 0 10vh 10vh;
+}
+.parcours .content-section {
+	max-width: 85%;
+	margin: auto;
+}
+.parcours h2 {
+	font-size: 60px;
+	text-align: center;
+	padding: 20px 0 4px 0;
+}
+.rectangle{
+	display: flex;
+	justify-content: center;
+	max-width: 10%;
+	margin: auto;
+	padding: 3px 0;
+	background-color: #3B8EA5;
+	border-radius: 3px;
+}
+.parcours .content-section .tabs{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 5vh;
+}
+.parcours .content-section .tabs .tabs-head {
+	display: flex;
+	justify-content: center;
+	align-items: right;
+	width: 80%;
+	margin: auto;
+}
+.parcours .content-section .tabs .tabs-head .tabs-toggle{
+	background-color: #D4D4D4;
+	color: #171717;
+	display: flex;
+	box-shadow: inset 0 0 0 0 #3B8EA5;
+	width: 25%;
+	height: 50px;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: ease-out 0.3s;
+}
+.parcours .content-section .tabs .tabs-head .tabs-toggle:hover{
+	box-shadow: inset 0 1vh 0 0 #3B8EA5;
 
+}
+.parcours .content-section .tabs .tabs-head .tabs-toggle.is-active{
+	box-shadow: inset 0 8vh 0 0 #3B8EA5;
+	color: #D4D4D4;
+}
+.parcours .content-section .tabs .tabs-body{
+	margin-top: 5vh;
+}
+.parcours .content-section .tabs .tabs-body .tabs-content {
+	display: none;
+}
+.parcours .content-section .tabs .tabs-body .tabs-content.is-active {
+	display: inline;
+}
+.parcours .content-section .tabs .tabs-body .tabs-content .content-section{
+	display: flex;
+	margin: auto;
+	max-width: 60%;
+	justify-content: space-between;
+	align-items: center;
+}
+.parcours .content-section .tabs .tabs-body .tabs-content .rectangle-div{
+	padding: 20px 3px;
+	background-color: #3B8EA5;
+	border-radius: 4px;
+}
+
+.parcours .content-section .tabs .tabs-body .tabs-content .description{
+	width: 70vh;
+	margin: 10px 50px 10px 0;
+}
+.parcours .content-section .tabs .tabs-body .tabs-content .description h4 {
+	font-size: 28px;
+	font-weight: bold;
+}
+.parcours .content-section .tabs .tabs-body .tabs-content .description h5 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #3B8EA5;
+}
+.parcours .content-section .tabs .tabs-body .tabs-content .dates {
+	display: flex;
+	width: 20%;
+	margin: auto;
+	justify-content: center;
+}
 /* COMPETENCES */
 
 .skills {
@@ -450,8 +549,9 @@ html{
 	margin: auto;
 }
 .skills .content-section .tabs .tabs-head .tabs-toggle{
+	background-color: #D4D4D4;
+	color: #171717;
 	display: flex;
-	background-color: #171717;
 	box-shadow: inset 0 0 0 0 #3B8EA5;
 	width: 25%;
 	height: 50px;
@@ -462,10 +562,10 @@ html{
 }
 .skills .content-section .tabs .tabs-head .tabs-toggle:hover{
 	box-shadow: inset 0 1vh 0 0 #3B8EA5;
-
 }
 .skills .content-section .tabs .tabs-head .tabs-toggle.is-active{
-	box-shadow: inset 0 5vh 0 0 #3B8EA5;
+	box-shadow: inset 0 8vh 0 0 #3B8EA5;
+	color: #D4D4D4;
 }
 .skills .content-section .tabs .tabs-content {
 	padding: 30px;
@@ -588,7 +688,8 @@ html{
 	position: relative;
 	width: 320px;
 	height: 420px;
-	background: #0d0d0d;
+	margin: 0 4vh;
+	background: #D4D4D4;
 	border-radius: 25px;
 	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 	overflow: hidden;
@@ -625,7 +726,7 @@ html{
 	pointer-events: none;
 	transition: .3s;
 	opacity: 0;
-	color: #D4D4D4;
+	color: #171717;
 	text-align: justify;
 }
 .portfolio .card:hover .infos p {

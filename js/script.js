@@ -1,4 +1,4 @@
-/*Skills*/
+/*Tabs*/
 
 let tabs = document.querySelectorAll('.tabs-toggle'),
 	contents = document.querySelectorAll('.tabs-content');
