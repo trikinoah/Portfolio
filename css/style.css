@@ -229,11 +229,14 @@ html{
 	margin: auto;
 }
 .apropos h2 {
-	font-size: 60px;
+	font-size: 50px;
 	text-align: center;
-	padding: 20px 0;
+	padding: 20px 0 5px 0;
+	text-transform: uppercase;
+
 }
 .apropos .rows {
+	margin-top: 5vh;
 	display: flex;
 }
 .apropos .rows .infos {
@@ -296,9 +299,15 @@ html{
 	text-align: center;
 	margin: 0 5px;
 }
+.background {
+	height: 100vh;
+	background-color: #0d0d0d;
+	margin: 0;
+	padding: 0;
+}
 
 /* FORMATIONS */
-.background {
+/* .background {
 	height: 100vh;
 	background-color: #0d0d0d;
 	margin: 0;
@@ -320,7 +329,7 @@ html{
 .cv h2 {
 	font-size: 60px;
 	text-align: center;
-	padding: 20px 0;
+	padding: 20px 0 4px 0;
 }
 .cv .rows {
 	display: flex;
@@ -418,7 +427,7 @@ html{
 	float: left;
 	position: relative;
 	bottom: 4px;
-}
+} */
 /* Parcours */
 .parcours{
 	background-color: #171717;
@@ -432,9 +441,10 @@ html{
 	margin: auto;
 }
 .parcours h2 {
-	font-size: 60px;
+	font-size: 50px;
 	text-align: center;
-	padding: 20px 0 4px 0;
+	padding: 20px 0 5px 0;
+	text-transform: uppercase;
 }
 .rectangle{
 	display: flex;
@@ -543,15 +553,17 @@ html{
 	margin: auto;
 }
 .skills .content-section h2 {
-	font-size: 60px;
+	font-size: 50px;
 	text-align: center;
-	padding: 20px 0;
+	padding: 20px 0 5px 0;
+	text-transform: uppercase;
 }
 .skills .content-section .tabs{
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	margin-top: 10vh;
+	margin-top: 5vh;
+
 }
 .skills .content-section .tabs .tabs-head {
 	display: flex;
@@ -691,12 +703,13 @@ html{
 	margin: auto;
 }
 .portfolio .content-section h2 {
-	font-size: 60px;
+	font-size: 50px;
 	text-align: center;
-	padding: 20px 0;
+	padding: 20px 0 5px 0;
+	text-transform: uppercase;
 }
 .portfolio .content-section .rows{
-	margin-top: 4vh;
+	margin-top: 5vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -774,12 +787,7 @@ footer .content-section h2{
 	justify-content: center;
 }
 
-.contact > h1 {
-	text-align: center;
-	padding: 25px;
-	text-transform: uppercase;
-	font-family: 'Roboto', sans-serif;
-}
+
 
 .contact > .form {
 	width: 40%;
@@ -919,7 +927,7 @@ footer .content-section h2{
 
 /* POP UP */
 #blur.active{
-	filter: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='a' x='0' y='0' width='1' height='1'%3E%3CfeGaussianBlur stdDeviation='4' result='b'/%3E%3CfeMorphology operator='dilate' radius='4'/%3E %3CfeMerge%3E%3CfeMergeNode/%3E%3CfeMergeNode in='b'/%3E%3C/feMerge%3E%3C/filter%3E%3C/svg%3E#a");
+	filter: blur(3px);
 }
 
 #popup{
